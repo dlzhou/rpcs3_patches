@@ -1,0 +1,5 @@
+PPU-664fb0e4a94c62c15a6474841c202fb2bf80ce16: # Uncharted 3 GOTY BCES01670 1.10
+  - [ be32, 0x0092d790, 0x480000e4 ] #  Disable PPU trap errors
+
+PPU-02a88c3c6cd415b0bb81f1606bc743835881a4ba: # Uncharted 3 BCES01175 1.19
+  - [ be32, 0x0094e9a8, 0x480000e4 ] #  Disable PPU trap errors

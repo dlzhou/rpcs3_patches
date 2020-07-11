@@ -1,0 +1,34 @@
+Version: 1.2
+Anchors:
+  uc3_110_trap: &uc3_110_trap
+    - [ be32, 0x0092d790, 0x480000e4 ]
+  uc3_119_trap: &uc3_119_trap
+    - [ be32, 0x0094e9a8, 0x480000e4 ]
+	
+PPU-664fb0e4a94c62c15a6474841c202fb2bf80ce16:
+  Disable PPU trap errors:
+    Games:
+      "Uncharted 3: Drake's Deception":
+        BCES01175: [ 01.10 ]
+        BCES01670: [ 01.10 ]
+        BCUS98233: [ 01.10 ]
+        BCAS25014: [ 01.10 ]
+    Author: dlzhou
+    Notes: Disables PPU trap errors encountered in the beginning of Chapter Citadel. This patch can be disabled after the scene when jumping into the tower through a small window.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *uc3_110_trap ]
+    
+PPU-02a88c3c6cd415b0bb81f1606bc743835881a4ba:
+  Disable PPU trap errors:
+    Games:
+      "Uncharted 3: Drake's Deception":
+        BCES01175: [ 01.19 ]
+        BCES01670: [ 01.19 ]
+        BCUS98233: [ 01.19 ]
+        BCAS25014: [ 01.19 ]
+    Author: dlzhou
+    Notes: Disables PPU trap errors encountered in the beginning of Chapter Citadel. This patch can be disabled after the scene when jumping into the tower through a small window.
+    Patch Version: 1.0
+    Patch:
+      - [ load, *uc3_119_trap ]
