@@ -4,7 +4,7 @@ Anchors:
     - [ be32, 0x0092d790, 0x480000e4 ]
   uc3_119_trap: &uc3_119_trap
     - [ be32, 0x0094e9a8, 0x480000e4 ]
-	
+
 PPU-664fb0e4a94c62c15a6474841c202fb2bf80ce16:
   Disable PPU trap errors:
     Games:
@@ -18,7 +18,7 @@ PPU-664fb0e4a94c62c15a6474841c202fb2bf80ce16:
     Patch Version: 1.0
     Patch:
       - [ load, *uc3_110_trap ]
-    
+
 PPU-02a88c3c6cd415b0bb81f1606bc743835881a4ba:
   Disable PPU trap errors:
     Games:
